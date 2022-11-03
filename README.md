@@ -17,7 +17,7 @@
 
    2. http://localhost:3000/api/images [GET] (query parameters: filename, width, height)
 
-   3. try this URL: http://HostURL:3000/api/images?filename=fjord&width=500&height=500
+   3. try this URL: http://localhost:3000/api/images?filename=fjord&width=500&height=500
 
 * after the build run this command to do Unit testing 
     ```bash
