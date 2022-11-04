@@ -29,8 +29,11 @@ export async function changeSize(
       height: number
 ): Promise<string> {
       // check valid width and height
-      if (checkNan(height) || checkNan(width)) {
-            throw 'invalid width or height'
+      if (checkNan(width)) {
+            throw 'invalid width'
+      }
+      if (checkNan(height)) {
+            throw 'invalid height'
       }
 
       const imgPath: string = path.join(

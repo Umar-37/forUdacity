@@ -13,7 +13,7 @@ async function imagesEnd(request: Request, response: Response) {
             response.sendFile(imgPath)
       } catch (error) {
             console.error('Error has occurred:', error)
-            response.status(400).send('<span>error has occured</span>')
+            response.status(400).end(error)
       }
 }
 
